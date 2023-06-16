@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const hebergementsSchema = mongoose.Schema({
+const hebergementSchema = mongoose.Schema({
     titre: {type : 'String'},
     username : {type : 'String'},
     imagename : {type : 'String'},

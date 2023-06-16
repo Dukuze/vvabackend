@@ -17,16 +17,17 @@ require('dotenv').config();
 var mongoose = require('mongoose');
 
 const url = process.env.DATABASE_URL
+
 mongoose.connect(url,{
     useNewUrlParser: true,
     UseUnifiedTopology: true
 }).then(console.log("MongoDB connected !"))
 .catch(err => console.log(err))
 
-const Contact = require('./models/Accueil');
-const Contact = require('./models/Activites'); 
-const Contact = require('./models/Animation');
-const Contact = require('./models/Connexion');
-const Contact = require('./models/ContactezNous'); 
-const Contact = require('./models/Hebergements'); 
-const Contact = require('./models/Utilisateur'); 
+const Accueil = require('./models/Accueil');
+const Activites = require('./models/Activites'); 
+const Animation = require('./models/Animation');
+const Connexion = require('./models/Connexion');
+const ContactezNous = require('./models/ContactezNous'); 
+const Hebergements = require('./models/Hebergements'); 
+const Utilisateur = require('./models/Utilisateur'); 

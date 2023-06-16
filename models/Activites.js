@@ -1,10 +1,17 @@
 const mongoose = require('mongoose');
 
-const blogSchema = mongoose.Schema({
-    titre: {type : 'String'},
-    username : {type : 'String'},
-    imagename : {type : 'String'},
+const activitesSchema = mongoose.Schema({
+
+    date: {type : 'Date'},
+    hrRDV : {type : 'Date'},
+    prix : {type : 'Number'},
+    hrDebut : {type : 'Date'},
+    hrFin : {type : 'Date'},
+    dateAnnule : {type : 'Date'},
+    nomResp : {type : 'String'},
+    prenomResp : {type : 'String'},
+
     
 })
 
-module.exports = mongoose.model('Blog', blogSchema)
+module.exports = mongoose.model('Activites', activitesSchema)
